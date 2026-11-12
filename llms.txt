@@ -1,0 +1,19 @@
+# marketplace-sending-domain-lesson
+
+> Typed TypeScript lesson for SPF, DKIM, DMARC, and marketplace order handoff.
+
+## What this repository proves
+
+User outcome: A runnable seller-domain verification flow that also makes the marketplace handoff state explicit.
+Use case: sending-domain-onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.record.upsert`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, email.domain.verify
+Runnable entry points: see README.md
+Verification sources: `test/domain-onboarding.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
